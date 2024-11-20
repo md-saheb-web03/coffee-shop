@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 30px;
+    font-family:sans-serif;
+    overflow-x: hidden;
+}
+  /* page loader  */
+.swiper-wrapper{
+    background: linear-gradient(45deg , rgb(228, 5, 5),rgb(54, 2, 242));
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100% ;
+    height: 100% ;
+    z-index: 9999 ;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in;
+  }
+
+#load{
+    width: 60px;
+    height: 60px;}
+/* navbar code  */
+#nav{
+    background: linear-gradient(45deg , rgb(27, 27, 27),rgb(71, 56, 56));
+    height: 80px;
+}
+#brand{
+    font-size: 40px;
+    font-family: popins , sans-serif;
+    font-weight: bold;
+}
+/* banner code  */
+.banner{
+    width: 100%;
+    /* height: 550px; */
+    background-image: url('../images/banner-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 80px;
+}
+#cont{
+    padding-top: 80px;
+}
+#cont h1{
+    font-size: 50px;
+    color: black;
+    font-weight: bold;
+    font-family: cursive;
+}
+#cont h3{
+    color: #fff;
+    font-size: 80px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+#cont button{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+/* about section  */
+.about{
+    background-color: #fffbfb;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#about1{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+#ab1 h1{
+    color: brown;
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+#ab1 button{
+    font-size: 30px;
+    padding: 10px 15px;
+}
+.coffee_image{
+    width: 100%;
+    height: 300px;
+}
+#ab2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* gallary start  */
+.gallery{
+    width: 100%;
+    background-color: #fdf5f5;
+}
+#gallery{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+#photo h1{
+    font-size: 35px ;
+    color: brown;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 20px;
+}
+#photo{
+    width: 100%;
+    margin-bottom: 50px;
+}
+#photo1{
+    width: 30%;
+    height: 350px;
+    margin-bottom: 50px;
+    box-shadow: -10px 30px 20px black;
+}
+#photo1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#photo button{
+    padding: 15px;
+    font-size: 30px;
+}
+/* service section start  */
+.service{
+    width: 100%;
+    height: 600px;
+    background-image: url('../images/services-bg.png');
+    background-position: top;
+    background-size: contain;
+    margin-bottom: 50px;
+}
+#serv{
+    width: 30%;
+    background-color:#f76d37;
+    margin-top: 50px;
+    transition: all 1s ease-in-out;
+}
+#serv button{
+    font-size: 25px ;
+    padding: 12px;
+}
+#serv:hover{
+    transform: translate(0%,20%);
+    
+}
+/* detail code  */
+.detail{
+    width: 100%;
+    padding: 20px 20px;
+}
+#contact{
+    width: 48%;
+    height: 550px;
+    background-image: url('../images/img-10.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+}
+#contact1{
+    width: 48%;
+}
+#form{
+    font-size: 30px;
+}
+/* footer sction  */
+.footer{
+    width: 100%;
+    background-color: black;
+}
+#foot{
+    width: 22%;
+    height: 300px;
+    margin-bottom: 20px;
+    color: #fff;
+    padding-top: 40px;
+}
+.heading_area {
+    margin-bottom: 50px;
+}
+.gallery_showcase_area{
+    width: 100%;
+    height: 350px;
+    margin-bottom: 30px;
+}
+.gallery_showcase_area img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*
+ 1366px
+ 1199px
+991px
+767px
+575px
+480px
+
+
+*/
+
+
+@media only screen and (max-width:991px){
+    .coffee_details_area{
+        margin-bottom: 50px;
+    }
+    #photo1 {
+        height: 200px;
+        margin-bottom: 30px;
+
+    }
+}
+@media only screen and (max-width:767px){
+
+
+}
+@media only screen and (max-width:575px){
+#nav{
+    display: block;
+}
+}
+@media only screen and (max-width:480px){
+    #nav
+    #cont h3 {
+        font-size: 40px;
+    }
+    .tog_btn{
+        margin-right: 50px;
+    }
+    #brand{
+        font-size: 30px;
+    }
+    #cont h1{
+        font-size: 36px;
+    }
+    #cont h3{
+        font-size: 28px;
+        
+    }
+    #cont p{
+        font-size: 20px;
+        color: #3737f7 !important;
+    }
+    #foot{
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+    #foot p{
+      font-size: 20px;
+    }
+    #cont button{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    #serv{
+        width: 100%;
+    }
+    .service{
+        height: auto;
+    }
+   #contact{
+    width: 100%;
+   }
+   #contact1{
+    width: 100%;
+   }
+}
+@media only screen and (max-width:380px){
+    #brand{
+        font-size: 25px;
+    }
+    #cont{
+        width: 100%;
+    }
+    
+}
+@media only screen and (max-width:320px){
+    
+}
+

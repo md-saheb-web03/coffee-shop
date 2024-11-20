@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bootstrap</title>
+  <!-- css link  -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- boostrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- boostrap icon link  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  <!-- page loader  -->
+  <div class="swiper-wrapper">
+    <div class="spinner-border text-white" role="status" id="load">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+  <!-- navbar start here  -->
+  <nav class="navbar navbar-dark  fixed-top" id="nav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" id="brand">GRANDCOFFEE</a>
+      <button class="navbar-toggler tog_btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">GRANDCOFFEE</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                COFFEEE
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">BLACK COFFEEE</a></li>
+                <li><a class="dropdown-item" href="#">WHITE COFFEEE</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">REGISTER HERE</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-info" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- banner start here  -->
+  <section class="banner">
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"><i
+            class="bi bi-chevron-right"></i></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container" id="cont">
+            <div class="row">
+              <div class="col-lg-6">
+                <h1>OUTSTANDING</h1>
+                <h3>COFFEEE SHOP</h3>
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Illum similique
+                  cupiditate pariatur fugiat dolorum rem laudantium
+                  reprehenderit corrupti distinctio non?</p>
+                <button class="btn btn-outline-dark">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container" id="cont">
+            <div class="row">
+              <div class="col-lg-6">
+                <h1>OUTSTANDING</h1>
+                <h3>COFFEEE SHOP</h3>
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Illum similique
+                  cupiditate pariatur fugiat dolorum rem laudantium
+                  reprehenderit corrupti distinctio non?</p>
+                <button class="btn btn-outline-dark">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container" id="cont">
+            <div class="row">
+              <div class="col-lg-6">
+                <h1>OUTSTANDING</h1>
+                <h3>COFFEEE SHOP</h3>
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Illum similique
+                  cupiditate pariatur fugiat dolorum rem laudantium
+                  reprehenderit corrupti distinctio non?</p>
+                <button class="btn btn-outline-dark">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <!-- about section  -->
+  <section class="about">
+    <div class="container" id="about1">
+      <div class="row align-items-center">
+        <div class="col-lg-8" id="ab1">
+          <div class="coffee_details_area">
+            <h1>ABOUT US</h1>
+            <p>Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Blanditiis, dignissimos.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Neque molestiae optio est ut provident
+              aut alias corrupti commodi suscipit mollitia.</p>
+            <button class="btn btn-outline-dark">Read More</button>
+          </div>
+        </div>
+        <div class="col-lg-4" id="ab2">
+          <div class="coffee_image">
+            <img src="images/about-img.png" alt="" class="image-fluide">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="about_us_wrapper">
+    <div class="container">
+      <div class="about_area">
+        <div class="heading_area">
+          <h2>About us</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sequi consectetur enim eveniet.
+            Reiciendis quos voluptatem expedita sequi eveniet placeat quam est, ullam odio cupiditate sapiente eaque
+            culpa maxime totam.</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="about_text_area">
+              ....
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="about_total_button_and_photo_area">
+              <div class="about_photo_button_area">
+                <div class="about_coffee_photo">
+                  <img src="" alt="">
+                </div>
+                <div class="about_button_area">
+
+                </div>
+              </div>
+              <div class="about_photo_button_area">
+                <div class="about_coffee_photo">
+                  <img src="" alt="">
+                </div>
+                <div class="about_button_area">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- gallery section  -->
+
+  <section class="gallery">
+
+    <div class="container p-5" id="photo">
+      <div class="gallery_area">
+        <div class="heading_area text-center">
+          <h1>OUR GALLARY</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid architecto non
+            asperiores ipsam necessitatibus dicta molestiae,
+            voluptas, eligendi gsftdhvjbj
+            repudiandae ipsa fuga quisquam quis, obcaecati quaerat dolorem vitae dolor ullam accusamus.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="gallery_showcase_area">
+              <img src="images/img-1.png" alt="">
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="gallery_showcase_area">
+              <img src="images/img-2.png" alt="">
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="gallery_showcase_area">
+              <img src="images/img-3.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="gallery_showcase_area">
+              <img src="images/img-4.png" alt="">
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="gallery_showcase_area">
+              <img src="images/img-5.png" alt="">
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="gallery_showcase_area">
+              <img src="images/img-6.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="gallery_showcase_area">
+              <img src="images/img-7.png" alt="">
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="gallery_showcase_area">
+              <img src="images/img-8.png" alt="">
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="gallery_showcase_area">
+              <img src="images/img-9.png" alt="">
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-outline-danger">See More</button>
+      </div>
+    </div>
+  </section>
+  <!-- service section  -->
+  <section class="service">
+    <div class="container p-5">
+      <div class="row justify-content-evenly">
+
+        <div class="col-lg-3 text-center text-white p-5 pt-4" id="serv">
+          <div class="service_img">
+            <img src="images/icon1.png" alt="">
+          </div>
+          <div class="service_details">
+            <h1>orignal coffee</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, repellat!</p>
+          </div>
+          <div class="service_btn">
+            <button class="btn btn-outline-dark">Read More</button>
+          </div>
+        </div>
+
+        <div class="col-lg-3 text-center text-white p-5" id="serv">
+          <div class="service_img">
+            <img src="images/icon1.png" alt="">
+          </div>
+          <div class="service_details">
+            <h1>orignal coffee</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, repellat!</p>
+          </div>
+          <div class="service_btn">
+            <button class="btn btn-outline-dark">Read More</button>
+          </div>
+        </div>
+
+        <div class="col-lg-3 text-center text-white " id="serv">
+          <div class="service_img">
+            <img src="images/icon1.png" alt="">
+          </div>
+          <div class="service_details">
+            <h1>orignal coffee</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, repellat!</p>
+          </div>
+          <div class="service_btn">
+            <button class="btn btn-outline-dark">Read More</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- details section  -->
+  <section class="detail pb-5">
+    <div class="container-fluid" id="detail1">
+      <div class="row justify-content-between">
+        <div class="col-lg-6" id="contact">
+          <form id="form">
+            <div class="mb-3 text-white">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text text-white">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3 text-white">
+              <label for="exampleInputPassword1" class="form-label">PHone number</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 text-white">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check text-white">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+          </form>
+        </div>
+        <div class="col-lg-6" id="contact1">
+          <div class="map">
+           <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d314.62145348908473!2d88.38530511553027!3d22.539365892982424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02775c886d598b%3A0x7c3bda6152d525fb!2sNaya%20basti!5e0!3m2!1sen!2sin!4v1729878899752!5m2!1sen!2sin"
+            width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          
+        
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- footer section  -->
+  <footer class="footer">
+    <div class="container-fluid">
+      <div class="row justify-content-evenly">
+        <div class="col-lg-4" id="foot">
+          <div class="footer_details">
+            <h1>About</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur
+              adipisicing elit. Est quam minima dolor
+              repudiandae omnis,<br> officia
+              totam aperiam, error eligendi veniam eum
+              delectus voluptatum quaerat, odit quo!</p>
+          </div>
+        </div>
+        <div class="col-lg-4" id="foot">
+          <div class="footer_details">
+            <h1>Menu</h1>
+            <ul>
+              <li>Home</li>
+              <li>about</li>
+              <li>contact</li>
+              <li>service</li>
+              <li>support</li>
+            </ul>
+          </div>
+         
+        </div>
+        <div class="col-lg-4" id="foot">
+          <div class="footer_details">
+            <h1>Usefull Link</h1>
+            <p>Lorem ipsum dolor sit
+              amet <br> consectetur
+              adipisicing elit. <br>
+              Harum accusantium quisquam
+              vitae <br>deleniti repellendus eum?</p>
+          </div>
+        
+        </div>
+        <div class="col-lg-4" id="foot">
+          <div class="footer_details">
+            <h1>contact</h1>
+            <p>Email : mgdgysg@email</p>
+            <p>phone : 675477858654</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- boostrap link  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <!-- js link  -->
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
